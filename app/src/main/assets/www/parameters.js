@@ -1,0 +1,98 @@
+
+//SETTINGS :
+var CANVAS_WIDTH = 1120;
+var CANVAS_HEIGHT = 1400;
+
+var EDGEBOARD_X = 175;
+var EDGEBOARD_Y = 0;
+
+var PHYSICS_ITERATIONS = 5;
+
+var PRIMARY_FONT = "comfortaabold";
+
+var FPS  = 40 ;
+var FPS_TIME      = 1000/FPS;
+var DISABLE_SOUND_MOBILE = false;
+var s_bDebug = false;
+
+var PLAYER = 0;
+var COLLECTABLE = 1;
+var TAIL = 2;
+
+var NUM_ISTANCES_TAILS = 60;
+var LENGTH_START_SNAKE = 5;
+
+var BOX = 0;
+var WALL = 1;
+
+var EDGE_BOT = 0;
+var EDGE_LEFT = 1;
+var EDGE_RIGHT = 2;
+
+
+var STOPPED_ON_RIGHT = 0;
+var STOPPED_ON_LEFT = 1;
+
+
+var X_CELL_0 = EDGEBOARD_X+2+80;
+var ROWS_COLS_OFFSET = 152;
+var COUNTER_SPAWN_ROWS_COLS = 152;
+var NUM_CELLS_PER_ROWS = 5;
+var WALL_OFFSET =  76;
+
+var NUM_ISTANCES_COLLECTABLES = 10;
+var NUM_ISTANCES_BOXES_AND_WALLS = 20;
+
+var ROW_PATTERN_BOXES_0 = 0;
+var ROW_PATTERN_BOXES_1 = 2;
+var ROW_PATTERN_BOXES_2 = 5;
+
+var DISTANCE_PLAYER_FACTOR = 3;
+var LIMIT_PLAYER_STEP = 30;//40;
+
+var OFFSET_Y_TAILS = 30;
+var OFFSET_MOD_BOUNDS = 50;
+
+var DIAMETER_PLAYER = 30;
+
+var FRAME_TO_SKIP_PLAYER_AND_TAIL = 1;
+var STEP_FRAME_TO_SKIP = 1;
+
+var PLAYER_START_X = CANVAS_WIDTH/2;
+var PLAYER_START_Y = CANVAS_HEIGHT/2+100;
+
+var PLAYER_SPEED = 12;
+
+var BOXES_WIDTH = 153; //box width
+var BOXES_HEIGHT = 153; //box height
+var WALLS_HEIGHT = 151;
+var COLLECTABLES_HEIGHT = 32;
+
+var HARDEST_COLOR = 5;
+var HARD_COLOR = 4;
+var MEDIUM_HARD_COLOR = 3;
+var MEDIUM_COLOR = 2;
+var EASIEST_COLOR = 0;
+var EASY_COLOR = 1;
+
+var STATE_LOADING = 0;
+var STATE_MENU    = 1;
+var STATE_HELP    = 1;
+var STATE_GAME    = 3;
+var STATE_LEVEL_SELECTION = 4;
+
+var ON_MOUSE_DOWN  = 0;
+var ON_MOUSE_UP    = 1;
+var ON_MOUSE_OVER  = 2;
+var ON_MOUSE_OUT   = 3;
+var ON_DRAG_START  = 4;
+var ON_DRAG_END    = 5;
+
+var s_bFirstPlay = true; //<-- here we have this parameter to enable or disable tutorial.
+
+var ENABLE_FULLSCREEN;
+var ENABLE_CHECK_ORIENTATION;
+
+
+var AD_SHOW_COUNTER;
+
